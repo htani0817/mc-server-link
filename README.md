@@ -1,8 +1,8 @@
 # mc-server-link
 
-別々に建てた Minecraft サーバー同士をつないで、**行き来できるようにする** NeoForge 26.2 の Mod です。プロキシ（Velocity など）は使わず、vanilla の transfer（別のサーバーへ移す仕組み）で移動します。
+別々に建てた Minecraft サーバー同士をつないで、**行き来できるようにする** NeoForge 26.3 の Mod です。プロキシ（Velocity など）は使わず、vanilla の transfer（別のサーバーへ移す仕組み）で移動します。
 
-- 対象: Minecraft 26.2 / NeoForge 26.2.0.88 以降
+- 対象: Minecraft 26.3 / NeoForge 26.3.0.102 以降（Minecraft 26.2 で使う場合は [v1.0.0](https://github.com/htani0817/mc-server-link/releases/tag/v1.0.0) を使ってください）
 - 入れる場所: **つなぐ全部のサーバーと、各プレイヤーのクライアントの両方**
 - Mod を入れていないクライアントもサーバーに入れます（一覧の画面と、落ちたときのつなぎ直しが無いだけです）
 - Mod を入れたクライアントは、この Mod の無いサーバーにも入れます
@@ -28,7 +28,7 @@
 
 ## 導入
 
-1. [Releases](https://github.com/htani0817/mc-server-link/releases) から `mc-server-link-<版>+mc26.2-neoforge.jar` をダウンロードします
+1. [Releases](https://github.com/htani0817/mc-server-link/releases) から `mc-server-link-<版>+mc26.3-neoforge.jar` をダウンロードします
 2. つなぐ全部のサーバーの `mods/` に置いて、一度起動します。`config/mc_server_link/servers.json` に例が書き出されます（**例のままでは動きません**。直すまで移動を止めています）
 3. `servers.json` を直します。**全部のサーバーに同じ一覧**を置き、`thisServer` だけをサーバーごとに変えます
 4. 全部のサーバーの `server.properties` を `accepts-transfers=true` にします（ロビーも含めます）
