@@ -1,0 +1,26 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="TANI"
+description='''
+別々に建てたサーバー同士をつないで行き来できるようにする。
+サーバー側: サーバーの一覧・/server・/lobby・止めるときにロビーへ送る。
+クライアント側: タイトル画面からロビーへ参加・サーバーの一覧画面・行き先が落ちたらロビーへつなぎ直す。
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
